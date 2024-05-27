@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tooljet:
+    image: tooljet/try:latest
+    container_name: tooljet
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    volumes:
+      - tooljet_data:/var/lib/postgresql/13/main
+    platform: linux/amd64
+
+volumes:
+  tooljet_data:

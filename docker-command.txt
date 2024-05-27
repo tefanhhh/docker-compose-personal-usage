@@ -1,0 +1,21 @@
+Commands to Manage Containers
+Start Containers
+To start the containers (in detached mode), run:
+docker-compose up -d
+
+Stop Containers
+To stop the containers without removing them:
+docker-compose stop
+
+Restart Containers
+To restart the stopped containers:
+docker-compose start
+
+Remove Containers
+To stop and remove the containers, but keep the data in the volume:
+docker-compose down
+
+Remove Containers and Volumes
+To stop and remove the containers and also remove the named volumes:
+docker-compose down -v
+
